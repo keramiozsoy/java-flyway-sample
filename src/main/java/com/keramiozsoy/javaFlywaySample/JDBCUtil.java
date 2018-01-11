@@ -62,15 +62,17 @@ public class JDBCUtil {
 			while (rs.next()) {
 				System.out.println(" - ");
 				System.out.print("-" + "-"
-						+ rs.getString(rsmd.getColumnName(2)) + "-"
-						+ rs.getString(rsmd.getColumnName(3)) + "-"
-						+ rs.getString(rsmd.getColumnName(4)) + "-"
-						+ rs.getString(rsmd.getColumnName(5)) + "-"
-						+ rs.getString(rsmd.getColumnName(6)) + "-"
-						+ rs.getString(rsmd.getColumnName(7)) + "-"
-						+ rs.getString(rsmd.getColumnName(8)) + "-"
-						+ rs.getString(rsmd.getColumnName(9)) + "-"
-						+ rs.getInt(rsmd.getColumnName(10)) + "-");
+				
+				+"installed_rank >>"		+ rs.getString(rsmd.getColumnName(1)) + "***"
+				+"version >>"		+ rs.getString(rsmd.getColumnName(2)) + "***"
+				+"description >>"		+ rs.getString(rsmd.getColumnName(3)) + "***"
+				+"type >>"		+ rs.getString(rsmd.getColumnName(4)) + "***"
+				+"script >>"		+ rs.getString(rsmd.getColumnName(5)) + "***"
+				+"checksum >>"		+ rs.getString(rsmd.getColumnName(6)) + "***"
+				+"installed_by >>"		+ rs.getString(rsmd.getColumnName(7)) + "***"
+				+"installed_on >>"		+ rs.getString(rsmd.getColumnName(8)) + "***"
+				+"execution_time >>"		+ rs.getString(rsmd.getColumnName(9)) + "***"
+				+"success >>"		+ rs.getInt(rsmd.getColumnName(10)) + "***");
 
 			}
 		} catch (Exception e) {
