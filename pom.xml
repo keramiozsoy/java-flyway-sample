@@ -20,6 +20,12 @@
 		<artifactId>flyway-core</artifactId>
 		<version>4.0.3</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<version>10.11.1.1</version>
+		</dependency>
   </dependencies>
   <build>
 		<finalName>java-flyway-sample</finalName>
